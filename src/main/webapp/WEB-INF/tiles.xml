@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/Home/home.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/Home/header.jsp" />
+<!-- 		<put-attribute name="menu" value="/WEB-INF/Home/menu.jsp" /> -->
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/Home/footer.jsp" />
+
+	</definition>
+
+	<definition name="Login" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/login.jsp" />
+	</definition>
+	<definition name="Home" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/dashboard.jsp" />
+	</definition>
+	<definition name="SchemeHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/scheme.jsp" />
+	</definition>
+	<definition name="ThidiHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/thidi.jsp" />
+	</definition>
+	<definition name="DonorHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/donors.jsp" />
+	</definition>
+	<definition name="DateWiseReport" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/dateReports.jsp" />
+	</definition>
+	<definition name="ThidiWiseReport" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/thidiReports.jsp" />
+	</definition>
+	<definition name="ChangePassword" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/changePassword.jsp" />
+	</definition>
+	
+	<!-- <definition name="UserHome" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/userdashbord.jsp" />
+	</definition>
+	<definition name="UserDonor" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/userdonors.jsp" />
+	</definition>
+	<definition name="DonorList" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/donorslist.jsp" />
+	</definition>
+	<definition name="UserDateWiseReport" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/userDateReports.jsp" />
+	</definition>
+	<definition name="UserThidiWiseReport" extends="base.definition">
+		<put-attribute name="body" value="/WEB-INF/pages/userThidiReports.jsp" />
+	</definition> -->
+
+</tiles-definitions>
+
+
